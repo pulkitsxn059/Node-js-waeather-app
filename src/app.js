@@ -5,12 +5,11 @@ const geocode = require('../utils/geocode')
 const weather = require('../utils/weather')
 const port = process.env.PORT || 3000
 //Configure Directory Paths
-const publicDirectorypath = path.join(__dirname,'\..')+"\\public"
+const publicDirectorypath = path.join(__dirname,'../')+'public/'
 const partialsPath = path.join(__dirname,'../templates/partials')
 const viewspath = path.join(__dirname,'../templates/views')
 
 const app = express()
-
 app.use(express.static(publicDirectorypath))
 
 //Setting Configurations
